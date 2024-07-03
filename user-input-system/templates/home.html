@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>User Input System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+</head>
+<body>
+    <h1>Input</h1> <!-- Move this to the top-left corner -->
+
+    <div class="container">
+        <form id="user-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="birthday">Birthday:</label>
+            <input type="date" id="birthday" name="birthday" required>
+            <button type="submit">Submit</button>
+        </form>
+        <h2>Users</h2>
+        <ul id="user-list"></ul>
+    </div>
+
+</body>
+</html>

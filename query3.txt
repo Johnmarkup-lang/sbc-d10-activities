@@ -1,0 +1,1 @@
+SELECT fName, mName, lName FROM tbl_customer_info WHERE tbl_customer_info.id NOT IN (SELECT tbl_customer_info_id FROM tbl_rents_info)
